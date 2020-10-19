@@ -1,0 +1,22 @@
+/* pages/mySetting/mySetting.wxss */
+
+.items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.btnImg{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.btn{
+  background-color: white;
+  border-radius: 5rpx;
+  border: 2rpx dashed yellow;
+  border-color: yellow;
+  border-width: thick;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}

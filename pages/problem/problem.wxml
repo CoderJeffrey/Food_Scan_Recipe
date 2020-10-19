@@ -1,0 +1,12 @@
+<!--pages/problem/problem.wxml-->
+<!-- <text>pages/problem/problem.wxml</text> -->
+<!-- needs a picture above the button -->
+<button class="btn1" open-type="contact">
+<image class="btnImg" src="../../iconlib/contact.png"></image>
+<view>联系客服</view>
+</button>
+
+<button class="btn2" open-type="feedback">
+<image class="btnImg" src="../../iconlib/problems.png"></image>
+<view>问题反馈</view>
+</button>

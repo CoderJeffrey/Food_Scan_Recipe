@@ -1,0 +1,20 @@
+<!--pages/mySetting/mySetting.wxml-->
+<!-- <text>pages/mySetting/mySetting.wxml</text> -->
+
+<view class="items">
+    <image class="btnImg" src="/iconlib/Setting_food.png" mode="aspectFill">
+    </image>
+    
+    <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <view>🔤基本信息授权</view>
+    </button>
+    
+    <button class="btn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+    <view>📞号码授权</view>
+    </button>
+    
+    <button class="btn" open-type="openSetting">
+    <!-- <image src="" class="imgB1"></image> -->
+    <view>🙎‍♂️个人授权设置</view>
+    </button>
+</view>

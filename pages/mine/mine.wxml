@@ -1,0 +1,19 @@
+<view>
+
+
+<button class="btn" bindtap="getChange" style="width:300rpx;height:300rpx;font-size=300px">
+<image class="btnImg" src="../../iconlib/setting.png"></image>
+<view>MySetting</view>
+</button>
+
+<button class="btn1" bindtap="getChange1">
+<image class="btnImg" src="../../iconlib/about_us.png" ></image>
+<view>About Us</view>
+</button>
+
+<button class="btn2" bindtap="getChange2">
+<image class="btnImg" src="../../iconlib/help.png"></image>
+<view>Need Help</view>
+</button>
+
+</view>

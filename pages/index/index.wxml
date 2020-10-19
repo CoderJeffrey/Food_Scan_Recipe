@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="container">
+  <camera
+  class="camera_food"
+  device-position="back"
+  flash="off"
+  binderror="error"
+  style="width:150px;height:150px;"   
+  ></camera>
+
+  <canvas
+  canvas-id="food_canvas"
+  ></canvas> 
+
+  <text class="textFormat">这是你扫描的食物：\n</text>
+  <view wx:for="{{list_food_mine}}" wx:for-item="food_every">
+  <text>{{food_every}}</text>
+  </view>
+  
+
+  <button
+  class="button1_type"
+  bindtap="takePhoto"
+  >
+  <text>拍照📸</text>
+  </button>
+
+
+<view class="buttonAll_type">
+ 
+  <button 
+    class="button2_type"
+    bindtap="continuePhoto"
+    >
+  食材错误，重拍
+  </button>
+
+  <button 
+  class="button3_type" 
+  bindtap="menuSwitch"
+  >
+  拍摄完毕，推食谱
+  </button>
+
+</view> 
+  
+<view>
+  <view class='bg' hidden="{{isHidden}}">
+    <view class='modalContent'>
+      <view class='title'>识别结果</view>
+                    <view class='cansole' bindtap='hiddenMd'>✘</view>
+                    <!-- <view class='contents'> -->
+                    <view class="md-title"> 您拍了一个什么</view>
+
+        <button
+            class="button1_type"
+            bindtap="exact_food_1"
+            style="padding:20rpx;margin:40rpx">
+            <text>香蕉</text>
+        </button>
+                  
+                  
+        <button
+            class="button1_type"  
+            bindtap="exact_food_2"
+            style="padding:20rpx;margin:40rpx">
+          <text>食材2</text>
+        </button>  
+
+        <button
+          class="button1_type"
+          bindtap="exact_food_3"
+          style="padding:20rpx;margin:40rpx"
+        >
+        <text>食材3</text>
+        </button>
+
+            
+        </view>
+    </view>
+</view> 
+
+</view>

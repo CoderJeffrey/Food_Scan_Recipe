@@ -1,0 +1,51 @@
+
+<view>⭐⭐：所提供菜谱至少包含您的两个食材</view>
+
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+  <view wx:for="{{listRecord_TwoStar}}" wx:for-item="TwoStar_Food">
+    <view wx:if="{{TwoStar_Food==every_Food.index_for_Food}}">
+        <view bindtap="PageSwitch" data-index="{{index_for_Food}}">
+          <text>菜名:{{every_Food.name}}\n</text>
+            <view wx:for="{{every_Food.steps}}" wx:for-item="step">
+          <image src="{{step}}" mode="aspectFit"></image>
+            </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{listRecord_TwoStar.length}}==0">
+  <text>无二级食谱\n</text>
+</view>
+
+<view>⭐：所提供菜谱至少包含您的一个食材</view>
+
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+
+  <view wx:for="{{listRecord_OneStar}}" wx:for-item="oneStar_Food">
+    <view wx:if="{{oneStar_Food==every_Food.index_for_Food}}">
+      <view bindtap="PageSwitch" data-index="{{every_Food.index_for_Food}}">
+        <view class="buttonFormat">
+          <text>菜名:{{every_Food.name}}\n</text>
+          <view wx:for="{{every_Food.steps}}" wx:for-item="step_food"> 
+            <image src="{{step_food}}" mode="aspectFit" ></image>
+          </view>
+        </view>
+     </view>
+    </view>
+  </view>
+
+    <view wx:for="{{list_food_Search}}" wx:for-item="ingredient">
+      <view wx:for="{{every_Food.foodRequired}}" wx:for-item="food_ing">
+        <view wx:if="{{food_ing==ingredient}}">
+          <view class="buttonFormat">
+            <text>菜名:{{every_Food.name}}\n</text>
+            <view wx:for="{{every_Food.steps}}" wx:for-item="step_food"> 
+              <image src="{{step_food}}" mode="aspectFit" ></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+

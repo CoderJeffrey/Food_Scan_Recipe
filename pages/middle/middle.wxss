@@ -1,0 +1,7 @@
+/* pages/middle/middle.wxss */
+
+.buttonFormat{
+  border: 5rpx solid cornflowerblue;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+}

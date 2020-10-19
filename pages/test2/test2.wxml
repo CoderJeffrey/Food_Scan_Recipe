@@ -1,0 +1,11 @@
+
+  <view class="textFormat">
+    <text>食谱手动搜索🔍\n</text>
+  </view>
+  <view class="itemsArranging" >
+    <input class="input1type" placeholder="请输入食材名字" bindconfirm="menuSwitch1"></input>
+    <view class="buttonArranging">
+      <text bindtap="menuSwitch1">Search</text>
+    </view>
+  </view>
+

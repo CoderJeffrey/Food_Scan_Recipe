@@ -1,0 +1,8 @@
+/* pages/aboutUs/aboutUs.wxss */
+
+page{
+  background-image: url("https://s1.ax1x.com/2020/10/04/0JKMvj.png");
+  background-repeat: no-repeat;
+  background-size: 100% 160%;
+}
+ 

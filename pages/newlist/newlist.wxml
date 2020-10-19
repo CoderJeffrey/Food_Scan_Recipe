@@ -1,0 +1,49 @@
+
+<!-- <view>⭐⭐</view>
+<view>（两课星星表达的意思就是这些菜谱至少包含您的两个食材）\n</view>
+
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+    <view wx:if="{{counting==every_Food.index_for_Food}}">
+            <text>菜名:{{every_Food.name}}\n</text>
+            <text>需要的食物:</text>
+            <text wx:for="{{every_Food.foodRequired}}" wx:for-item="foodie">
+            {{foodie}},
+            </text> 
+            <text>需要的配料+食物:</text>
+            <text wx:for="{{every_Food.ingredient}}" wx:for-item="ingredient_food">
+            {{ingredient_food}}
+            </text>
+            <view wx:for="{{every_Food.steps}}" wx:for-item="step">
+            <image src="{{step}}" mode="aspectFit"></image>
+            </view>
+    </view>
+</view> -->
+<!-- 
+<view>⭐</view>
+<view>（一课星星表达的意思就是这些菜谱至少包含您的一个食材）</view> -->
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+      <view wx:if="{{counting==every_Food.index_for_Food}}">
+          <text>菜名:{{every_Food.name}}\n</text>
+          <text>需要的食物:</text>
+          <view wx:for="{{every_Food.foodRequired}}" wx:for-item="food_asked_every">
+            <text>{{food_asked_every}},</text>
+          </view>
+          <text>\n</text>
+          <text>需要的配料：</text>
+          <view wx:for="{{every_Food.ingredient}}" wx:for-item="ingredient">
+            <text>{{ingredient}}</text>
+          </view>
+          <view wx:for="{{every_Food.steps}}" wx:for-item="step_food"> 
+            <image src="{{step_food}}" mode="aspectFit" ></image>
+          </view>
+        </view>
+</view>
+
+<!-- <view>⭐</view>
+<view>（一课星星表达的意思就是这些菜谱至少包含您的一个食材）</view>
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+    <view wx:if="{{counting==every_Food.index_for_Food}}">
+    Good
+    </view>
+</view> -->
+

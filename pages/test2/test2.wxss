@@ -1,0 +1,21 @@
+
+.textFormat{
+  text-align: center;
+  font-size: 50rpx;
+}
+
+.input1type{
+  border:5rpx solid cornflowerblue;
+  height: 2.7rem;
+  width: 80%;
+}
+
+.itemsArranging{
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonArranging{
+  margin-left: 12rpx;
+  margin-top: 22rpx;
+}

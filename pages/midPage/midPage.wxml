@@ -1,0 +1,31 @@
+<!--pages/midPage/midPage.wxml-->
+
+<view>⭐⭐</view>
+<view>（两课星星表达的意思就是这些菜谱至少包含您的两个食材）\n</view>
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+  <view wx:for="{{listRecord_TwoStar}}" wx:for-item="TwoStar_Food">
+    <view wx:if="{{TwoStar_Food==every_Food.index_for_Food}}">
+      <view wx:for="{{every_Food.steps}}" wx:for-item="pic">
+        <view> 
+          <image src="{{pic}}" mode="aspectFit"></image>
+          <text>{{every_Food.name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>⭐</view>
+<view>（一课星星表达的意思就是这些菜谱至少包含您的一个食材）</view>
+<view wx:for="{{listForFood}}" wx:for-item="every_Food">
+  <view wx:for="{{listRecord_OneStar}}" wx:for-item="oneStar_Food">
+    <view wx:if="{{oneStar_Food==every_Food.index_for_Food}}">
+      <view wx:for="{{every_Food.steps}}" wx:for-item="pic">
+          <view> 
+            <image src="{{pic}}" mode="aspectFit"></image>
+            <text>{{every_Food.name}}</text>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

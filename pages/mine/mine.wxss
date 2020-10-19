@@ -1,0 +1,52 @@
+/* pages/mine/mine.wxss */
+.naviTheme{
+  color: blue;
+
+}
+
+.btn{
+  width:200rpx;
+  height: 200rpx;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  color: rgb(29, 29, 187);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.btn1{
+  width:200rpx;
+  height: 200rpx;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  color: rgb(33, 196, 207);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.btn2{
+  width:200rpx;
+  height: 200rpx;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  color: rgb(85, 248, 134);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.btnImg{
+ width: 130rpx;
+ height: 130rpx;
+}
+.btn::after{
+  border: 0;
+}

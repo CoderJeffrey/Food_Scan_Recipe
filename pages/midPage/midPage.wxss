@@ -1,0 +1,10 @@
+/* pages/midPage/midPage.wxss */
+
+.SingleButton{
+  text-align: center;
+  font-style: normal;
+  color: rgb(44, 105, 105);
+  border-bottom: 6rpx solid rgb(152, 204, 125);
+  border-top: 6rpx solid rgb(152, 204, 125);
+  margin-top: 20rpx;
+}
